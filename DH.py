@@ -13,4 +13,3 @@ ka = (y**a)%P
 kb = (x**b)%P
 print("Secret key of Alice is: ", ka)
 print("Secret key of Bob is: ", kb)
-
