@@ -21,12 +21,12 @@ def calc_key(phi):
         if i == phi-1:
             sys.exit("Can't compute keys for existing prime nos.")
 
-p = 131
-q = 139
+p = 11
+q = 17
 n = p*q
 phi = (p-1)*(q-1)
 e, d = calc_key(phi)
-msg = 18209
+msg = 88
 encrypt_msg = pow(msg, e, n)
 decrypt_msg = pow(encrypt_msg, d, n)
 
